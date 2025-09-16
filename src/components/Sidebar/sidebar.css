@@ -1,0 +1,4 @@
+
+.recent-entry {
+  @apply flex  gap-1 items-start p-1  cursor-pointer rounded-md w-[100%]  text-gray-500  hover:bg-red-200;
+}
