@@ -1,8 +1,8 @@
 .main{
-    flex:1;
-    min-height: 100vh;
-    padding-bottom:15vh ;
-    position: relative;
+   flex: 1; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .main .nav{
@@ -59,22 +59,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-/* 
-.main .cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
-    gap:15px;
-    padding: 20px;
-}
 
-.main .card{
-    height: 200px;
-    padding: 15px;
-    background-color: #f0f4f9;
-    border-radius: 10px;
-    position: relative;
-    cursor: pointer;
-} */
 
 .main-bottom{
     position:absolute;

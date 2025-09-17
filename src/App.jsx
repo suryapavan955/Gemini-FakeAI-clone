@@ -12,23 +12,15 @@ function App() {
   return (
     <>
 
-     {/* {isLoggedIn ? ( */}
-        <div className="flex">
+     {isLoggedIn ? (
+        <div className="App flex w-100% min-h-screen">
           <Sidebar onSelectChatroom={(id) => setSelectedChatroomId(id)} />
-          <Main selectedChatroomId={selectedChatroomId} />
+          <Main selectedChatroomId={selectedChatroomId} onSelectChatroom={(id) => setSelectedChatroomId(id)} />
         </div>
-      {/* ) : (
+      ) : (
         <Auth onLoginSuccess={() => setIsLoggedIn(true)} />
-      )} */}
+      )}
 
-    {/* {isLoggedIn ? ( */}
-        {/* <>
-          <Sidebar />
-          <Main />
-        </> */}
-      {/* ) : ( */}
-        {/* <Auth onLoginSuccess={() => setIsLoggedIn(true)} /> */}
-      {/* )} */}
     </>
   );
 }

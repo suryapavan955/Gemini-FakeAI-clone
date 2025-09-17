@@ -1,25 +1,4 @@
-// import {create} from "zustand";
 
-// const useChatStore = create((set) => ({
-//   chatrooms: [],
-
-//   addChatroom: (title) =>
-//     set((state) => ({
-//       chatrooms: [...state.chatrooms, { id: Date.now(), title }],
-//     })),
-
-//   deleteChatroom: (id) =>
-//     set((state) => ({
-//       chatrooms: state.chatrooms.filter((room) => room.id !== id),
-//     })),
-
-//   resetChatrooms: () =>
-//     set({
-//       chatrooms: [],
-//     }),
-// }));
-
-// export default useChatStore;
 
 import { create } from "zustand";
 
@@ -40,12 +19,58 @@ const useChatStore = create((set) => ({
       title: "Project Ideas",
       messages: [],
     },
+      {
+      id: Date.now() + 4,
+      title: "General Chat",
+      messages: [],
+    },
+    {
+      id: Date.now() + 5,
+      title: "React Help",
+      messages: [],
+    },
+    {
+      id: Date.now() + 6,
+      title: "Project Ideas",
+      messages: [],
+    },
+      {
+      id: Date.now() + 7,
+      title: "General Chat",
+      messages: [],
+    },
+    {
+      id: Date.now() + 8,
+      title: "React Help",
+      messages: [],
+    },
+    {
+      id: Date.now() + 9,
+      title: "Project Ideas",
+      messages: [],
+    },
+      {
+      id: Date.now() + 10,
+      title: "General Chat",
+      messages: [],
+    },
+    {
+      id: Date.now() + 11,
+      title: "React Help",
+      messages: [],
+    }
   ],
 
   addChatroom: (title) =>
-    set((state) => ({
-      chatrooms: [...state.chatrooms, { id: Date.now(), title, messages: [] }],
-    })),
+  set((state) => {
+    const newRoom = { id: Date.now(), title, messages: [] };
+    return { chatrooms: [...state.chatrooms, newRoom] };
+  }),
+
+  // addChatroom: (title) =>
+  //   set((state) => ({
+  //     chatrooms: [...state.chatrooms, { id: Date.now(), title, messages: [] }],
+  //   })),
 
   deleteChatroom: (id) =>
     set((state) => ({
