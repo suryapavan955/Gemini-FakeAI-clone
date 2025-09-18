@@ -2,7 +2,7 @@
 
 import "./Main.css";
 import React, { useState } from "react";
-import useChatStore from "../store/chatStore";
+import useChatStore from "../store/chatstore";
 
 const fakeAiReplies = [
   "React is a JavaScript library.",
