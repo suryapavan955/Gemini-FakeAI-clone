@@ -67,10 +67,7 @@ const useChatStore = create((set) => ({
     return { chatrooms: [...state.chatrooms, newRoom] };
   }),
 
-  // addChatroom: (title) =>
-  //   set((state) => ({
-  //     chatrooms: [...state.chatrooms, { id: Date.now(), title, messages: [] }],
-  //   })),
+
 
   deleteChatroom: (id) =>
     set((state) => ({

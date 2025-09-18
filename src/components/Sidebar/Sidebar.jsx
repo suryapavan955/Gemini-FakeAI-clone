@@ -5,7 +5,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import HistoryIcon from "@mui/icons-material/History";
 import SettingsIcon from "@mui/icons-material/Settings";
-import useChatStore from "../store/chatStore";
+import useChatStore from "../store/chatstore";
 import "./sidebar.css";
 
 const SidebarIcon = ({ Icon }) => (
